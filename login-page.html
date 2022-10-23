@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- iconscout css -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <link rel="stylesheet" href="nav_style.css">
+  <link rel="stylesheet" href="register_style.css">
+  <title>myGym</title>
+</head>
+
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><i>my<span class=".gym-text"><strong>Gym</strong></span></i></div>
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="register-page.html">Sign Up</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+
+  <section>
+    <div class="login-container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+          <form name="loginForm" action="post" class="form-fields">
+            <div class="input-field">
+              <input name="username" type="text" placeholder="User Name" required>
+              <i class="uil uil-user icon"></i>
+            </div>
+
+            <div class="input-field">
+              <input name="password" type="password" class="password" placeholder="Enter password" required>
+              <i class="uil uil-lock icon"></i>
+              <i class="uil uil-eye-slash showHidePw"></i>
+            </div>
+
+            <!-- <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck">
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+
+              <a href="#" class="text">Forgot password?</a>
+            </div> -->
+
+            <div class="input-field button">
+              <input type="button" onclick="handleLogin(event)" value="Login Now">
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text">Don't have an account?
+              <a href="#" class="text signup-link">Signup now</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
